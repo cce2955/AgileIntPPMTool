@@ -9,4 +9,7 @@ import com.main.project.domain.Project;
 public interface ProjectRepo extends CrudRepository<Project, Long>{
 	
 	Project findByProjectIdentifier(String projectId);
+	
+	@Override
+	Iterable<Project> findAll();
 }
