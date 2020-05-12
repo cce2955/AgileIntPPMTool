@@ -7,6 +7,6 @@ import com.main.project.domain.Project;
 
 @Repository
 public interface ProjectRepo extends CrudRepository<Project, Long>{
-	@Override
-	Iterable<Project> findAllById(Iterable<Long> iterable);
+	
+	Project findByProjectIdentifier(String projectId);
 }
